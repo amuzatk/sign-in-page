@@ -1,5 +1,23 @@
+/* body{
+  background-color: rgb(202, 198, 240);
+} */
+
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: rgb(202, 198, 240);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  /* width: 50%; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
