@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import Jump from 'react-reveal/Jump';
+import RubberBand from 'react-reveal/RubberBand';
 import './App.css';
 
 function SignIn() {
@@ -17,6 +19,10 @@ function SignIn() {
 
   return (
     <div className='App'>
+       <RubberBand>
+          <h1>Sign-In Page</h1>
+        </RubberBand>
+        <Jump>
     <form onSubmit={handleSubmit}>
 
 <FloatingLabel
@@ -40,6 +46,7 @@ function SignIn() {
       <br />
       <Button type="submit" variant="primary">Sign In</Button>
     </form>
+    </Jump>
     </div>
   );
 }
